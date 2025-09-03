@@ -5,6 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us | Seme Football Sporting FC</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Timeline style for achievements */
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px 0;
+    }
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background-color: #006400;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -2px;
+    }
+    .timeline-card {
+      padding: 20px;
+      position: relative;
+      background: #fff;
+      border-radius: 8px;
+      width: 45%;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin: 10px 0;
+    }
+    .timeline-card.left {
+      left: 0;
+    }
+    .timeline-card.right {
+      left: 55%;
+    }
+    .timeline-card::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      right: -10px;
+      background: #006400;
+      border: 4px solid #fff;
+      top: 20px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+    .timeline-card.right::after {
+      left: -10px;
+    }
+    h2.timeline-year {
+      color: #006400;
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -21,10 +74,36 @@
 
   <section>
     <div class="card">
-      <h2>Our Story</h2>
-      <p><strong>Founded:</strong> 2025</p>
+      <h2>Our History</h2>
+      <p><strong>Founded:</strong> 2021</p>
+      <p><strong>Location:</strong> Seme, Katani, Machakos County, Kenya</p>
+      <p>Seme Football Sporting FC was founded in 2021 with the vision of nurturing grassroots football talent in Seme. Our mission is to provide a platform where young athletes can develop their skills, build discipline, teamwork, and represent the community with pride.</p>
+    </div>
+
+    <div class="card">
+      <h2>Mission & Vision</h2>
       <p><strong>Mission:</strong> To nurture grassroots football talent and promote discipline, teamwork, and community values.</p>
       <p><strong>Vision:</strong> To become a leading community-based football club producing top players for Kenya and beyond.</p>
+    </div>
+
+    <div class="card">
+      <h2>Achievements</h2>
+      <div class="timeline">
+        <div class="timeline-card left">
+          <h2 class="timeline-year">2022</h2>
+          <p>Participated in the <strong>Mavoko Tournament</strong> – third runners-up.</p>
+          <p>Played several friendly matches to develop team skills.</p>
+        </div>
+        <div class="timeline-card right">
+          <h2 class="timeline-year">2025</h2>
+          <p>Participated in multiple tournaments:</p>
+          <ul>
+            <li><strong>Destiny Church Tournament</strong> – 1st runners-up</li>
+            <li><strong>Outreach Tournament</strong> – 2nd runners-up</li>
+            <li>Several other local competitions</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
