@@ -3,8 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teams | Seme Football Sporting FC</title>
+  <title>Our Teams | Seme Football Sporting FC</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .team-section {
+      margin: 30px auto;
+      max-width: 900px;
+      padding: 20px;
+    }
+    .team-section h2 {
+      color: #006400;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #006400;
+      display: inline-block;
+    }
+    .team-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .player-card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+    }
+    .player-card h3 {
+      margin: 5px 0;
+      color: #333;
+    }
+    .player-card p {
+      margin: 0;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -19,14 +53,55 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <section>
-    <div class="card">
-      <h2>Player Groups</h2>
-      <ul>
-        <li>Under-12 Team - Coach James</li>
-        <li>Under-15 Team - Coach Peter</li>
-        <li>Senior Team - Coach Samuel</li>
-      </ul>
+  <section class="team-section">
+    <h2>Senior Team</h2>
+    <div class="team-container">
+      <div class="player-card">
+        <h3>Coming Soon</h3>
+        <p>Roster will be updated soon</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="team-section">
+    <h2>Seme Pensioners</h2>
+    <div class="team-container">
+      <div class="player-card">
+        <h3>Denis Abuya</h3>
+        <p>—</p>
+      </div>
+      <div class="player-card">
+        <h3>Gordon Odhiambo</h3>
+        <p>CDM</p>
+      </div>
+      <div class="player-card">
+        <h3>Jeremiah Omondi</h3>
+        <p>CB</p>
+      </div>
+      <div class="player-card">
+        <h3>Alexander Kadasia</h3>
+        <p>CAM</p>
+      </div>
+      <div class="player-card">
+        <h3>Francis Ndungu</h3>
+        <p>GK</p>
+      </div>
+      <div class="player-card">
+        <h3>Christopher</h3>
+        <p>CB</p>
+      </div>
+      <div class="player-card">
+        <h3>Justus Masese</h3>
+        <p>CAM</p>
+      </div>
+      <div class="player-card">
+        <h3>David Young</h3>
+        <p>CF</p>
+      </div>
+      <div class="player-card">
+        <h3>Felix Opiyo</h3>
+        <p>RWB</p>
+      </div>
     </div>
   </section>
 
@@ -35,3 +110,4 @@
   </footer>
 </body>
 </html>
+
