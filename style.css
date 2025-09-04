@@ -138,3 +138,27 @@ footer {
   padding: 15px;
   margin-top: 40px;
 }
+
+/* Latest News */
+.latest-news {
+  padding: 40px 20px;
+  text-align: center;
+  background: #fff;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.latest-news h2 {
+  color: #006400;
+  margin-bottom: 20px;
+}
+
+.news-card {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+}
+
