@@ -162,3 +162,26 @@ footer {
   text-align: left;
 }
 
+/* Roster Table */
+.roster-table {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  font-size: 1em;
+}
+
+.roster-table th, .roster-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.roster-table th {
+  background: #006400;
+  color: white;
+}
+
+.roster-table tr:nth-child(even) {
+  background: #f2f2f2;
+}
