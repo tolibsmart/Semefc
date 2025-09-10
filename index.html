@@ -8,40 +8,15 @@
 </head>
 <body>
 
-  <!-- Header with Logo + Sidebar Toggle -->
   <header class="main-header">
-    <div class="header-container">
-      <img src="images/logo.png" alt="Seme FC Logo" class="club-logo">
-      <h1>Seme Football Sporting FC</h1>
-      <button class="open-btn" onclick="openSidebar()">☰</button>
-    </div>
-  </header>
-
-  <!-- Sidebar -->
-  <div id="clubSidebar" class="sidebar">
-    <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()">&times;</a>
-    <h2>Club Leadership</h2>
-    <p><strong>Team Chairman:</strong> [Name]</p>
-    <p><strong>Vice Chair:</strong> [Name]</p>
-    <p><strong>Patron:</strong> [Name]</p>
-    <p><strong>Assistant Patron:</strong> [Name]</p>
-    <p><strong>Organizing Secretary:</strong> [Name]</p>
-    <p><strong>Assistant Secretary:</strong> [Name]</p>
-    <p><strong>Treasurer:</strong> [Name]</p>
-    <p><strong>Team Manager:</strong> [Name]</p>
-    <p><strong>Coach:</strong> [Name]</p>
-    <p><strong>Captain:</strong> Wayne Oketch</p>
+  <div class="header-container">
+    <img src="images/logo.png" alt="Seme FC Logo" class="club-logo">
+    <h1>Seme Football Sporting FC</h1>
+    <!-- Button now redirects -->
+    <a href="leadership.html" class="open-btn">☰</a>
   </div>
+</header>
 
-  <!-- Sidebar Script -->
-  <script>
-    function openSidebar() {
-      document.getElementById("clubSidebar").style.width = "300px";
-    }
-    function closeSidebar() {
-      document.getElementById("clubSidebar").style.width = "0";
-    }
-  </script>
 
   <!-- Hero Section -->
   <section class="hero">
