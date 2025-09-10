@@ -8,50 +8,44 @@
 </head>
 <body>
 
-  <!-- Header with Logo -->
+  <!-- Header with Logo + Sidebar Toggle -->
   <header class="main-header">
-    <img src="images/logo.png" alt="Seme FC Logo" class="club-logo">
-    <h1>Seme Football Sporting FC</h1>
+    <div class="header-container">
+      <img src="images/logo.png" alt="Seme FC Logo" class="club-logo">
+      <h1>Seme Football Sporting FC</h1>
+      <button class="open-btn" onclick="openSidebar()">☰</button>
+    </div>
   </header>
 
-  <header>
-  <img src="images/logo.png" alt="Seme FC Logo" class="logo">
-  <h1>Welcome to Seme Football Sporting FC</h1>
+  <!-- Sidebar -->
+  <div id="clubSidebar" class="sidebar">
+    <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()">&times;</a>
+    <h2>Club Leadership</h2>
+    <p><strong>Team Chairman:</strong> [Name]</p>
+    <p><strong>Vice Chair:</strong> [Name]</p>
+    <p><strong>Patron:</strong> [Name]</p>
+    <p><strong>Assistant Patron:</strong> [Name]</p>
+    <p><strong>Organizing Secretary:</strong> [Name]</p>
+    <p><strong>Assistant Secretary:</strong> [Name]</p>
+    <p><strong>Treasurer:</strong> [Name]</p>
+    <p><strong>Team Manager:</strong> [Name]</p>
+    <p><strong>Coach:</strong> [Name]</p>
+    <p><strong>Captain:</strong> Wayne Oketch</p>
+  </div>
 
-  <!-- Sidebar Toggle Button -->
-  <button class="open-btn" onclick="openSidebar()">☰</button>
-</header>
-
-<!-- Sidebar -->
-<div id="clubSidebar" class="sidebar">
-  <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()">&times;</a>
-  <h2>Club Leadership</h2>
-  <p><strong>Team Chairman:</strong> [Name]</p>
-  <p><strong>Vice Chair:</strong> [Name]</p>
-  <p><strong>Patron:</strong> [Name]</p>
-  <p><strong>Assistant Patron:</strong> [Name]</p>
-  <p><strong>Organizing Secretary:</strong> [Name]</p>
-  <p><strong>Assistant Secretary:</strong> [Name]</p>
-  <p><strong>Treasurer:</strong> [Name]</p>
-  <p><strong>Team Manager:</strong> [Name]</p>
-  <p><strong>Coach:</strong> [Name]</p>
-  <p><strong>Captain:</strong> Wayne Oketch</p>
-</div>
-
-<script>
-  function openSidebar() {
-    document.getElementById("clubSidebar").style.width = "300px";
-  }
-
-  function closeSidebar() {
-    document.getElementById("clubSidebar").style.width = "0";
-  }
-</script>
-
+  <!-- Sidebar Script -->
+  <script>
+    function openSidebar() {
+      document.getElementById("clubSidebar").style.width = "300px";
+    }
+    function closeSidebar() {
+      document.getElementById("clubSidebar").style.width = "0";
+    }
+  </script>
 
   <!-- Hero Section -->
   <section class="hero">
-    <h2>Welcome to Semefc</h2>
+    <h2>Welcome to Seme FC</h2>
     <p>Founded in 2021 | Katani, Machakos County, Kenya</p>
     <a href="about.html" class="btn">Learn More</a>
   </section>
@@ -95,17 +89,16 @@
   </section>
 
   <!-- Latest News Section -->
-<section class="latest-news">
-  <h2>Latest News & Updates</h2>
-  <div class="news-card">
-    <h3>Upcoming Match</h3>
-    <p><strong>Date:</strong> Saturday, 6th September 2025</p>
-    <p><strong>Opponent:</strong> Lakewood FC</p>
-    <p><strong>Time:</strong> 3:00 PM</p>
-    <p><strong>Venue:</strong> Kinka</p>
-  </div>
-</section>
-
+  <section class="latest-news">
+    <h2>Latest News & Updates</h2>
+    <div class="news-card">
+      <h3>Upcoming Match</h3>
+      <p><strong>Date:</strong> Saturday, 6th September 2025</p>
+      <p><strong>Opponent:</strong> Lakewood FC</p>
+      <p><strong>Time:</strong> 3:00 PM</p>
+      <p><strong>Venue:</strong> Kinka</p>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer>
@@ -114,3 +107,4 @@
 
 </body>
 </html>
+
