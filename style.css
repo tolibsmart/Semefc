@@ -33,8 +33,13 @@ body {
   background: none;
   border: none;
   color: #fff;
+  text-decoration: none;
   cursor: pointer;
 }
+.open-btn:hover {
+  color: #ccc;
+}
+
 
 /* Sidebar */
 .sidebar {
